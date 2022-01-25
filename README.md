@@ -5,7 +5,7 @@
 <p>Consists of an Authentication System, Admin login and Booking pages.</p>
 <p>DataBase used: MYSQL</p>
 
-just add your db details in connectionclass.
+
 
 
 <h2>Screenshots</h2>
