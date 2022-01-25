@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbcc.dataView">
+   <children>
+      <TableView fx:id="table" layoutY="37.0" prefHeight="402.0" prefWidth="634.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="52.19998246431351" text="id" />
+          <TableColumn fx:id="busName" prefWidth="70.60000228881836" text="busName" />
+            <TableColumn fx:id="busType" prefWidth="54.600006103515625" text="busType" />
+            <TableColumn fx:id="from" prefWidth="76.00001525878906" text="from" />
+            <TableColumn fx:id="to" prefWidth="67.20001220703125" text="to" />
+            <TableColumn fx:id="date" prefWidth="73.20001220703125" text="Date" />
+            <TableColumn fx:id="time" prefWidth="50.0" text="Time" />
+            <TableColumn fx:id="seats" prefWidth="95.5999755859375" text="Seats left" />
+            <TableColumn fx:id="price" prefWidth="89.60001220703123" text="price" />
+        </columns>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#goBack" prefHeight="30.0" prefWidth="275.0" text="&lt;-Go Back">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="382.0" mnemonicParsing="false" onAction="#showBookingData" prefHeight="32.0" prefWidth="255.0" text="Show Booking Data -&gt;">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

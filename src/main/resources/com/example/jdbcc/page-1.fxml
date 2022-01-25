@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbcc.loginController">
+   <children>
+      <Label alignment="CENTER" layoutX="220.0" layoutY="28.0" prefHeight="44.0" prefWidth="199.0" text="Blue Bus" textFill="#1864e8">
+         <font>
+            <Font name="Segoe UI Bold" size="46.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="400.0" prefWidth="190.0" style="-fx-background-color: #B8E4F0;" />
+      <TextField fx:id="username" layoutX="225.0" layoutY="141.0" prefHeight="35.0" prefWidth="190.0" promptText="username">
+         <font>
+            <Font name="Berlin Sans FB" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="225.0" layoutY="84.0" prefHeight="44.0" prefWidth="226.0" text="Login or Signup" textFill="#1829ea">
+         <font>
+            <Font name="JetBrains Mono ExtraLight" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginbtn" layoutX="225.0" layoutY="257.0" mnemonicParsing="false" onAction="#loginorsignup" prefHeight="44.0" prefWidth="199.0" text="Log In or Signup" textFill="#2516cd">
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="btn-primary" />
+         </styleClass>
+         <font>
+            <Font name="Segoe UI Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password" layoutX="226.0" layoutY="200.0" prefHeight="35.0" prefWidth="190.0" promptText="Password">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </PasswordField>
+      <Label alignment="TOP_CENTER" layoutX="509.0" layoutY="5.0" prefHeight="80.0" prefWidth="88.0" text="If You are admin, use admin credentials" textFill="#1537f5" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

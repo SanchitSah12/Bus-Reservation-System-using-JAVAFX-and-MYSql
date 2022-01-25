@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbcc.DelBus">
+   <children>
+      <ComboBox fx:id="selector" layoutX="206.0" layoutY="133.0" onMouseClicked="#populate" prefHeight="47.0" prefWidth="188.0" promptText="Select the bus">
+         <effect>
+            <Blend />
+         </effect></ComboBox>
+      <Label layoutX="210.0" layoutY="26.0" prefHeight="66.0" prefWidth="188.0" text="Delete bus" textFill="#ffca03">
+         <font>
+            <Font name="Segoe UI Bold" size="35.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="486.0" prefHeight="400.0" prefWidth="113.0" style="-fx-background-color: FFCA03;" />
+      <AnchorPane prefHeight="400.0" prefWidth="128.0" style="-fx-background-color: FFCA03;" />
+      <Button layoutX="160.0" layoutY="319.0" mnemonicParsing="false" onAction="#delBus" prefHeight="60.0" prefWidth="144.0" style="-fx-background-color: FFCA03;" text="Delete" textFill="#f8f8f8">
+         <font>
+            <Font name="Segoe UI Bold" size="31.0" />
+         </font>
+      </Button>
+      <Button layoutX="329.0" layoutY="319.0" mnemonicParsing="false" onAction="#goBack" prefHeight="60.0" prefWidth="128.0" style="-fx-background-color: FFCA03;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="27.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

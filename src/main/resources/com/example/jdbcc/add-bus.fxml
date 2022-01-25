@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbcc.AddBus">
+   <children>
+      <Label layoutX="204.0" layoutY="21.0" prefHeight="47.0" prefWidth="191.0" text="Add Buses" textFill="#d20a0a">
+         <font>
+            <Font name="Segoe UI Bold" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="busName" layoutX="119.0" layoutY="92.0" prefHeight="40.0" prefWidth="160.0" promptText="Bus Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="busType" layoutX="364.0" layoutY="92.0" prefHeight="40.0" prefWidth="150.0" promptText="Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="date" layoutX="120.0" layoutY="225.0" prefHeight="40.0" prefWidth="174.0" />
+      <Button layoutX="119.0" layoutY="327.0" mnemonicParsing="false" onAction="#addBus" prefHeight="47.0" prefWidth="116.0" text="Add" textFill="#df1313">
+         <font>
+            <Font name="Segoe UI Bold" size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="to" layoutX="364.0" layoutY="160.0" prefHeight="40.0" prefWidth="149.0" promptText="To">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Circle fill="#da0c2b" layoutX="14.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="120.0" layoutY="206.0" text="Date">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="from" layoutX="119.0" layoutY="160.0" prefHeight="40.0" prefWidth="160.0" promptText="From">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="time" layoutX="359.0" layoutY="225.0" prefHeight="40.0" prefWidth="160.0" promptText="Time(24 hr format)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="367.0" layoutY="206.0" prefHeight="18.0" prefWidth="27.0" text="Time" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="381.0" layoutY="328.0" mnemonicParsing="false" onAction="#goBack" prefHeight="47.0" prefWidth="116.0" text="Back" textFill="#2115cd">
+         <font>
+            <Font name="Segoe UI Bold" size="23.0" />
+         </font>
+      </Button>
+      <Label fx:id="success" layoutX="215.0" layoutY="55.0" prefHeight="28.0" prefWidth="200.0" textFill="#264fd4">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="seats" layoutX="119.0" layoutY="284.0" promptText="Seats" />
+      <TextField fx:id="price" layoutX="366.0" layoutY="284.0" prefHeight="26.0" prefWidth="150.0" promptText="Price Per Seat" />
+      <Label layoutX="120.0" layoutY="74.0" text="Bus Name" />
+   </children>
+</AnchorPane>

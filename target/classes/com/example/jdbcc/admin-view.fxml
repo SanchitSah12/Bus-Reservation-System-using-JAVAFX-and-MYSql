@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbcc.AdminView">
+   <children>
+      <Label layoutX="170.0" layoutY="51.0" text="Welcome ADMIN" textFill="#1b24a2">
+         <font>
+            <Font name="Rockwell Extra Bold" size="28.0" />
+         </font></Label>
+      <Label layoutX="194.0" layoutY="95.0" text="What will you do Today">
+         <font>
+            <Font name="JetBrains Mono Regular" size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="DODGERBLUE" layoutX="29.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="105.0" layoutY="179.0" mnemonicParsing="false" onAction="#addBus" prefHeight="54.0" prefWidth="130.0" text="Add Buses" textFill="#bd1616">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="379.0" layoutY="179.0" mnemonicParsing="false" onAction="#delBus" prefHeight="54.0" prefWidth="154.0" text="Delete Buses" textFill="#1313ca">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="140.0" layoutY="303.0" mnemonicParsing="false" onAction="#showData" prefHeight="39.0" prefWidth="174.0" text="Show bus Data" textFill="#5cde3e">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="324.0" layoutY="303.0" mnemonicParsing="false" onAction="#bookingdata" prefHeight="39.0" prefWidth="174.0" text="Show booking data" textFill="#0ced57">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goHome" prefHeight="39.0" prefWidth="86.0" style="-fx-background-color: dodgerblue;" text="Home" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

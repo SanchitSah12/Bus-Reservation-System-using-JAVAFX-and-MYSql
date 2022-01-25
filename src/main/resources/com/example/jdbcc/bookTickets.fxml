@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbcc.BookTickets">
+   <children>
+      <Label layoutX="220.0" layoutY="14.0" prefHeight="36.0" prefWidth="198.0" text="Book Tickets" textFill="#6516f8">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="31.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="47.0" layoutY="77.0" prefHeight="114.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="type" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="from" prefWidth="75.0" text="From " />
+            <TableColumn fx:id="to" prefWidth="75.0" text="To" />
+            <TableColumn fx:id="date" prefWidth="112.20001220703125" text="Date and Time" />
+            <TableColumn fx:id="price" prefWidth="104.60000610351562" text="Price per Ticket" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="selector" layoutX="80.0" layoutY="231.0" prefHeight="42.0" prefWidth="197.0" promptText="Select the bus" />
+      <Label layoutX="330.0" layoutY="216.0" text="Number of Tickets" textFill="#212fc2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="187.0" layoutY="304.0" mnemonicParsing="false" onAction="#book" prefHeight="42.0" prefWidth="91.0" text="Book">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Button>
+      <TextField fx:id="ss" layoutX="319.0" layoutY="234.0" prefHeight="36.0" prefWidth="172.0" />
+      <Button layoutX="319.0" layoutY="302.0" mnemonicParsing="false" onAction="#goBack" prefHeight="42.0" prefWidth="91.0" text="Back">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <AnchorPane prefHeight="400.0" prefWidth="27.0" style="-fx-background-color: #99FEFF;" />
+      <AnchorPane layoutX="581.0" prefHeight="400.0" prefWidth="22.0" style="-fx-background-color: #99FEFF;" />
+      <Label layoutX="47.0" layoutY="54.0" text="Available Buses" textFill="#2f3bf0">
+         <font>
+            <Font name="Calibri Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="367.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbcc.CustomerView">
+   <children>
+      <Circle fill="#087ff0" layoutX="-11.0" layoutY="255.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#e5da13" layoutX="-11.0" layoutY="155.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="159.0" layoutY="29.0" prefHeight="51.0" prefWidth="321.0" text="Welcome to BlueBus" textFill="#231dc2">
+         <font>
+            <Font name="Segoe UI Bold" size="30.0" />
+         </font></Label>
+      <Label layoutX="199.0" layoutY="84.0" text="Book your Tickets quick and easy" textFill="#9f2121">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Circle fill="#ff1f55" layoutY="29.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="145.0" layoutY="150.0" mnemonicParsing="false" onAction="#bookTickets" prefHeight="59.0" prefWidth="146.0" style="-fx-background-color: FF5403;" text="Book Tickets" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="350.0" layoutY="150.0" mnemonicParsing="false" onAction="#cancelTickets" prefHeight="59.0" prefWidth="161.0" style="-fx-background-color: FF5403;" text="Cancel Tickets" textFill="#f0f0f0">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font></Button>
+      <Button layoutX="-6.0" layoutY="-1.0" mnemonicParsing="false" onAction="#goHome" prefHeight="59.0" prefWidth="98.0" style="-fx-background-color: #ff1f55;" text="&lt;- Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

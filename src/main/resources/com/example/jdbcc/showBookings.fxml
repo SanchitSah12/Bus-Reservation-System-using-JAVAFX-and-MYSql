@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: D1E8E4;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jdbcc.ShowBookings">
+   <children>
+      <TableView fx:id="table" layoutX="49.0" layoutY="37.0" prefHeight="377.0" prefWidth="502.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="150.0" text="Ticket ID" />
+          <TableColumn fx:id="username" minWidth="0.0" prefWidth="131.0" text="PersonUsername" />
+            <TableColumn fx:id="busname" minWidth="0.0" prefWidth="98.0" text="Busname" />
+            <TableColumn fx:id="tickets" minWidth="0.0" prefWidth="120.0" text="No_of_Tickets" />
+        </columns>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="296.0" style="-fx-background-color: D1E8E4;" text="&lt;-Click me to go to admin home" textFill="#9a0c0c">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
